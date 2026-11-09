@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#116e75">
+  <meta name="description" content="Lasten monikielinen sanaselittäjä: vaikea suomenkielinen sana selkokielellä ja haluamallasi kielellä.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Sanakaveri – selitä sana</title>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="hero-left">
+        <div class="brand"><span class="logo" aria-hidden="true">Aa</span><span>Sanakaveri <span class="brand-sep">·</span> Monikielinen</span></div>
+        <h1>Vaikea sana?<br><span>Ymmärretään yhdessä.</span></h1>
+        <p class="lede">Kirjoita vaikea suomenkielinen sana. Saat selityksen helpolla suomella, käännöksen valitsemallasi kielellä ja kuuntelupainikkeet.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="spark">✦</span><span class="bubble b1">Hei!</span><span class="bubble b2" lang="ckb" dir="rtl">سڵاو!</span><span class="bubble b3">Hello!</span><span class="book">📖</span></div>
+    </header>
+    <section class="panel main-panel" aria-labelledby="word-label">
+      <label class="field-label" id="word-label" for="word">Minkä sanan haluat ymmärtää?</label>
+      <form id="form" autocomplete="off">
+        <div class="searchbar"><input id="word" type="text" maxlength="90" placeholder="Esimerkiksi: vastuu" required spellcheck="false"><button class="cta" type="submit" id="explainButton"><span aria-hidden="true">✦</span> Selitä sana</button></div>
+        <div class="controls">
+          <div class="field"><label for="explanationLanguage">Selityksen kieli</label><select id="explanationLanguage"></select><input id="explanationCustom" class="custom hidden" type="text" maxlength="64" placeholder="Kirjoita kieli, esim. amhara" aria-label="Muu selityskieli"></div>
+          <div class="field"><label for="translationLanguage">Käännöskieli</label><select id="translationLanguage"></select><input id="translationCustom" class="custom hidden" type="text" maxlength="64" placeholder="Kirjoita kieli, esim. oromo" aria-label="Muu käännöskieli"></div>
+        </div>
+        <details class="advanced"><summary>Luokan pääsykoodi (tarvittaessa)</summary><label for="classCode">Kirjoita opettajalta saamasi pääsykoodi.</label><input id="classCode" type="password" autocomplete="off" placeholder="Vain jos opettaja on asettanut koodin"></details>
+      </form>
+      <div class="samples"><span>Kokeile:</span><div id="examples" class="chips"></div></div>
+    </section>
+    <div id="status" role="status" aria-live="polite" class="message hidden"></div>
+    <section id="result" class="result hidden" aria-label="Sanan selitys">
+      <div class="result-title"><div><span class="eyebrow">SANAKAVERIN VASTAUS</span><h2 id="resultWord"></h2></div><span id="modeBadge" class="mode-badge">Tekoälyn selitys</span></div>
+      <div class="answer-grid">
+        <article class="answer-card finnish-card"><div class="heading-row"><span class="mini-icon" aria-hidden="true">🇫🇮</span><h3>Selkosuomeksi</h3></div><p id="simpleFinnish" class="answer-body"></p><button id="speakFi" class="speak" type="button">🔊 Kuuntele suomeksi</button></article>
+        <article class="answer-card translated-card"><div class="heading-row"><span class="mini-icon" aria-hidden="true">🌍</span><h3 id="translatedHeading">Kurdisoraniksi</h3></div><p id="translatedWord" class="translated-word"></p><button id="speakTranslated" class="speak" type="button">🔊 Kuuntele käännös</button></article>
+      </div>
+      <article class="answer-card extra-card" id="explanationPanel"><div class="heading-row"><span class="mini-icon" aria-hidden="true">💬</span><h3 id="explanationHeading">Selitys valitulla kielellä</h3></div><p id="explanation" class="answer-body"></p><button id="speakExplanation" class="speak" type="button">🔊 Kuuntele selitys tällä kielellä</button></article>
+      <div class="example-panel"><span class="eyebrow">ESIMERKKI LAUSEESSA</span><p id="exampleFinnish"></p><p id="exampleTranslated" class="example-translated"></p></div>
+      <div class="details-grid">
+        <div class="visual-panel"><span id="emoji" class="big-emoji" role="img" aria-label="Aiheen kuvitus">💡</span><div><strong>Aiheeseen liittyvä kuva tai video</strong><div class="visual-links"><a id="imageSearch" href="#" target="_blank" rel="noopener noreferrer">🖼️ Etsi kuvia</a><a id="videoSearch" href="#" target="_blank" rel="noopener noreferrer">▶ Etsi video</a></div></div></div>
+        <div class="note-panel"><strong>Huomaa</strong><p id="nuance"></p><p class="tiny">Ääni on tietokoneen tuottamaa. Käännökset kannattaa tarkistaa opettajan kanssa.</p></div>
+      </div>
+      <p id="audioStatus" role="status" aria-live="polite" class="audio-status"></p>
+    </section>
+    <section class="howto"><div class="howto-badge" aria-hidden="true">✨</div><p><strong>Valitse kieli – opi omalla kielelläsi.</strong> Selitys näkyy aina myös selkosuomeksi. Tekstikäännös voidaan tehdä monille kielille; ääneenluku riippuu kyseisen kielen puhepalvelusta.</p></section>
+    <footer><span>Sanakaveri on oppimisen apuväline, ei virallinen sanakirja.</span><span>Älä kirjoita henkilötietoja, nimiä tai osoitteita.</span></footer>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
