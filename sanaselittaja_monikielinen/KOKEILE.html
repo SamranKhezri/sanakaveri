@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#116e75">
+  <meta name="description" content="Lasten monikielinen sanaselittäjä: vaikea suomenkielinen sana selkokielellä ja haluamallasi kielellä.">
+  
+  
+  <style>:root{color-scheme:light;--ink:#15353e;--ink-muted:#536872;--turquoise:#087c83;--deep:#065a66;--mint:#e8f9f2;--border:#d9e8e9;--bg:#f5f9f8;--shadow:0 18px 50px rgba(25,91,93,.07)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 8% 0%,#dff7ed 0,transparent 35%),radial-gradient(ellipse at 88% 10%,#e7eeff 0,transparent 30%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5}.wrap{width:min(1050px,calc(100% - 36px));margin:0 auto;padding:28px 0 45px}.hero{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:10px 4px 26px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;color:var(--deep);font-size:15px;letter-spacing:.008em}.brand .logo{background:var(--turquoise);color:white;border-radius:13px;display:inline-grid;place-items:center;width:40px;height:40px;font-size:17px;box-shadow:0 5px 18px rgba(8,124,131,.18)}.brand-sep{color:#82adaf;margin:0 2px}.hero h1{font-size:clamp(37px,5vw,62px);line-height:1.08;letter-spacing:-.046em;margin:25px 0 15px;font-weight:820}.hero h1 span{color:var(--turquoise)}.lede{color:var(--ink-muted);font-size:17px;line-height:1.72;max-width:590px;margin:0}.hero-art{position:relative;min-width:300px;height:215px;margin-top:25px}.bubble{position:absolute;background:white;box-shadow:var(--shadow);border:1px solid #e5efef;border-radius:20px;padding:11px 21px;font-size:22px;font-weight:800;transform:rotate(-7deg)}.b1{top:20px;left:4px;color:var(--turquoise)}.b2{top:0;right:10px;transform:rotate(9deg);font-size:26px;color:#3d597c}.b3{bottom:15px;left:30px;transform:rotate(7deg);color:#c07b38}.book{font-size:104px;position:absolute;top:65px;right:36px;filter:drop-shadow(0 9px 10px rgba(20,50,70,.1))}.spark{position:absolute;right:0;top:118px;font-size:26px;color:#e6a937}.panel{border:1px solid var(--border);box-shadow:var(--shadow);background:white;border-radius:23px}.main-panel{padding:27px 30px}.field-label{display:block;font-size:20px;font-weight:820;margin-bottom:13px}.searchbar{display:flex;gap:12px}.searchbar input{font-size:21px;padding:14px 17px;border:2px solid #d9e6e6;border-radius:13px;min-width:0;flex:1;outline:0}.searchbar input:focus,select:focus,.custom:focus,#classCode:focus{border-color:var(--turquoise);outline:3px solid #bcebe3;outline-offset:1px}.cta{font-size:16px;font-weight:850;color:white;background:var(--turquoise);border:0;padding:0 24px;min-height:57px;border-radius:13px;white-space:nowrap;cursor:pointer;box-shadow:0 8px 15px rgba(6,122,126,.18)}.cta:hover{background:var(--deep)}.cta:disabled{opacity:.65;cursor:progress}.controls{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:14px;font-weight:750}.field select,.custom,#classCode{width:100%;padding:12px 14px;border:1.5px solid #d1e1e2;border-radius:11px;background:#fbfefe;color:var(--ink);font-size:16px;font-family:inherit;min-height:49px}.custom{margin-top:5px}.advanced{margin-top:13px;font-size:13px;color:var(--ink-muted)}.advanced summary{cursor:pointer}.advanced label{display:block;margin:8px 0 5px}.advanced input{max-width:360px}.samples{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:23px}.samples>span{font-size:13px;color:var(--ink-muted)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid #dbe7e6;background:#f2f8f6;color:#2c6165;border-radius:100px;padding:7px 13px;font-size:13px;font-weight:700;cursor:pointer}.chip:hover{background:#e5f5ef}.message{margin:18px 0;padding:14px 17px;background:#f0f7ff;border:1px solid #b9d9ef;border-radius:12px;color:#234b63}.message.error{background:#fff3ed;border-color:#ffc8b8;color:#823b23}.result{margin-top:26px}.result-title{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}.eyebrow{font-size:11px;letter-spacing:.115em;font-weight:850;color:#718890}.result-title h2{font-size:34px;line-height:1.1;margin:5px 0;color:#132f3c;overflow-wrap:anywhere}.mode-badge{font-size:12px;font-weight:750;color:#276c56;background:#e3f5eb;border-radius:99px;padding:8px 12px}.answer-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.answer-card{border-radius:18px;background:white;border:1px solid var(--border);padding:24px;box-shadow:0 5px 20px rgba(30,78,87,.035);min-width:0}.finnish-card{border-top:5px solid #66c3a5}.translated-card{border-top:5px solid #7caae3}.heading-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}.heading-row h3{margin:0;font-size:17px}.mini-icon{font-size:21px}.answer-body{font-size:21px;font-weight:630;line-height:1.56;margin:0 0 23px;overflow-wrap:anywhere}.translated-word{font-size:31px;line-height:1.6;font-weight:800;margin:0 0 22px;overflow-wrap:anywhere}.translated-word[dir=rtl],.answer-body[dir=rtl],.example-translated[dir=rtl]{text-align:right;font-family:"Noto Naskh Arabic","Noto Sans Arabic","Segoe UI",sans-serif}.speak{background:#eef7f9;color:#126773;border:1px solid #c9e3e6;padding:10px 14px;border-radius:10px;font-weight:780;cursor:pointer}.speak:hover{background:#d9eef0}.speak:disabled{opacity:.65;cursor:progress}.extra-card{margin-top:17px;background:#fafcfd}.extra-card .answer-body{font-size:19px}.example-panel{margin-top:18px;background:#e9f8f1;border-radius:17px;padding:17px 22px;border:1px solid #d2ebdf}.example-panel p{font-size:17px;font-weight:660;margin:7px 0}.example-panel .example-translated{font-size:16px;color:#315c59;font-weight:500}.details-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:17px;margin-top:18px}.visual-panel,.note-panel{border-radius:17px;background:white;border:1px solid var(--border);padding:17px 19px}.visual-panel{display:flex;align-items:center;gap:17px}.big-emoji{font-size:56px;line-height:1.1}.visual-links{display:flex;flex-wrap:wrap;gap:11px;margin-top:8px}.visual-links a{font-size:14px;color:var(--deep);font-weight:760;text-decoration:underline;text-underline-offset:3px}.note-panel strong,.visual-panel strong{font-size:14px}.note-panel p{font-size:13px;color:var(--ink-muted);margin:7px 0}.note-panel .tiny{font-size:12px}.audio-status{font-size:14px;color:#506873;min-height:23px}.howto{margin-top:20px;display:flex;gap:14px;align-items:center;background:#e9f2fa;border:1px solid #d9e7ed;border-radius:16px;padding:18px}.howto-badge{font-size:28px}.howto p{margin:0;font-size:14px;line-height:1.6;color:#365463}footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#637c84;font-size:12px;margin-top:23px;padding:0 4px}.hidden{display:none!important}button:focus-visible,a:focus-visible{outline:3px solid #e7af42;outline-offset:3px}@media(max-width:800px){.hero-art{display:none}.hero{padding:6px 0 24px}.hero h1{margin-top:20px}}@media(max-width:580px){.wrap{width:calc(100% - 24px);padding-top:16px}.hero h1{font-size:39px}.lede{font-size:15px}.main-panel{padding:19px}.searchbar{flex-direction:column}.cta{width:100%}.controls,.answer-grid,.details-grid{grid-template-columns:1fr}.answer-card{padding:19px}.translated-word{font-size:27px}.result-title h2{font-size:29px}.field-label{font-size:18px}}
+</style>
+  <title>Sanakaveri – kokeile esimerkkejä</title>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="hero-left">
+        <div class="brand"><span class="logo" aria-hidden="true">Aa</span><span>Sanakaveri <span class="brand-sep">·</span> Monikielinen</span></div>
+        <h1>Vaikea sana?<br><span>Ymmärretään yhdessä.</span></h1>
+        <p class="lede">Kirjoita vaikea suomenkielinen sana. Saat selityksen helpolla suomella, käännöksen valitsemallasi kielellä ja kuuntelupainikkeet.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="spark">✦</span><span class="bubble b1">Hei!</span><span class="bubble b2" lang="ckb" dir="rtl">سڵاو!</span><span class="bubble b3">Hello!</span><span class="book">📖</span></div>
+    </header>
+    <section class="panel main-panel" aria-labelledby="word-label">
+      <label class="field-label" id="word-label" for="word">Minkä sanan haluat ymmärtää?</label>
+      <form id="form" autocomplete="off">
+        <div class="searchbar"><input id="word" type="text" maxlength="90" placeholder="Esimerkiksi: vastuu" required spellcheck="false"><button class="cta" type="submit" id="explainButton"><span aria-hidden="true">✦</span> Selitä sana</button></div>
+        <div class="controls">
+          <div class="field"><label for="explanationLanguage">Selityksen kieli</label><select id="explanationLanguage"></select><input id="explanationCustom" class="custom hidden" type="text" maxlength="64" placeholder="Kirjoita kieli, esim. amhara" aria-label="Muu selityskieli"></div>
+          <div class="field"><label for="translationLanguage">Käännöskieli</label><select id="translationLanguage"></select><input id="translationCustom" class="custom hidden" type="text" maxlength="64" placeholder="Kirjoita kieli, esim. oromo" aria-label="Muu käännöskieli"></div>
+        </div>
+        <details class="advanced"><summary>Luokan pääsykoodi (tarvittaessa)</summary><label for="classCode">Kirjoita opettajalta saamasi pääsykoodi.</label><input id="classCode" type="password" autocomplete="off" placeholder="Vain jos opettaja on asettanut koodin"></details>
+      </form>
+      <div class="samples"><span>Kokeile:</span><div id="examples" class="chips"></div></div>
+    </section>
+    <div id="status" role="status" aria-live="polite" class="message hidden"></div>
+    <section id="result" class="result hidden" aria-label="Sanan selitys">
+      <div class="result-title"><div><span class="eyebrow">SANAKAVERIN VASTAUS</span><h2 id="resultWord"></h2></div><span id="modeBadge" class="mode-badge">Tekoälyn selitys</span></div>
+      <div class="answer-grid">
+        <article class="answer-card finnish-card"><div class="heading-row"><span class="mini-icon" aria-hidden="true">🇫🇮</span><h3>Selkosuomeksi</h3></div><p id="simpleFinnish" class="answer-body"></p><button id="speakFi" class="speak" type="button">🔊 Kuuntele suomeksi</button></article>
+        <article class="answer-card translated-card"><div class="heading-row"><span class="mini-icon" aria-hidden="true">🌍</span><h3 id="translatedHeading">Kurdisoraniksi</h3></div><p id="translatedWord" class="translated-word"></p><button id="speakTranslated" class="speak" type="button">🔊 Kuuntele käännös</button></article>
+      </div>
+      <article class="answer-card extra-card" id="explanationPanel"><div class="heading-row"><span class="mini-icon" aria-hidden="true">💬</span><h3 id="explanationHeading">Selitys valitulla kielellä</h3></div><p id="explanation" class="answer-body"></p><button id="speakExplanation" class="speak" type="button">🔊 Kuuntele selitys tällä kielellä</button></article>
+      <div class="example-panel"><span class="eyebrow">ESIMERKKI LAUSEESSA</span><p id="exampleFinnish"></p><p id="exampleTranslated" class="example-translated"></p></div>
+      <div class="details-grid">
+        <div class="visual-panel"><span id="emoji" class="big-emoji" role="img" aria-label="Aiheen kuvitus">💡</span><div><strong>Aiheeseen liittyvä kuva tai video</strong><div class="visual-links"><a id="imageSearch" href="#" target="_blank" rel="noopener noreferrer">🖼️ Etsi kuvia</a><a id="videoSearch" href="#" target="_blank" rel="noopener noreferrer">▶ Etsi video</a></div></div></div>
+        <div class="note-panel"><strong>Huomaa</strong><p id="nuance"></p><p class="tiny">Ääni on tietokoneen tuottamaa. Käännökset kannattaa tarkistaa opettajan kanssa.</p></div>
+      </div>
+      <p id="audioStatus" role="status" aria-live="polite" class="audio-status"></p>
+    </section>
+    <section class="howto"><div class="howto-badge" aria-hidden="true">✨</div><p><strong>Valitse kieli – opi omalla kielelläsi.</strong> Selitys näkyy aina myös selkosuomeksi. Tekstikäännös voidaan tehdä monille kielille; ääneenluku riippuu kyseisen kielen puhepalvelusta.</p></section>
+    <footer><span>Sanakaveri on oppimisen apuväline, ei virallinen sanakirja.</span><span>Älä kirjoita henkilötietoja, nimiä tai osoitteita.</span></footer>
+  </main>
+  <script>const $ = id => document.getElementById(id);
+const LANGUAGES = [
+  ['suomi','Suomi 🇫🇮'],['kurdisorani','Kurdi (sorani) کوردیی سۆرانی'],['kurmanji','Kurdi (kurmanji)'],
+  ['englanti','Englanti'],['ruotsi','Ruotsi'],['arabia','Arabia'],['somali','Somali'],['venäjä','Venäjä'],['viro','Viro'],
+  ['dari','Dari'],['persia','Persia / farsi'],['ukraina','Ukraina'],['saksa','Saksa'],['ranska','Ranska'],['espanja','Espanja'],
+  ['italia','Italia'],['portugali','Portugali'],['turkki','Turkki'],['albania','Albania'],['tigrinja','Tigrinja'],['amhara','Amhara'],
+  ['kiina','Kiina'],['japani','Japani'],['hindi','Hindi'],['urdu','Urdu'],['bengali','Bengali'],['nepali','Nepali'],
+  ['vietnam','Vietnam'],['thai','Thai'],['swahili','Swahili'],['oromo','Oromo'],['puola','Puola'],['romania','Romania'],
+  ['norja','Norja'],['tanska','Tanska'],['hollanti','Hollanti'],['kreikka','Kreikka'],['heprea','Heprea'],['bulgaria','Bulgaria'],
+  ['kroatia','Kroatia'],['bosnia','Bosnia'],['serbia','Serbia'],['latvia','Latvia'],['liettua','Liettua'],['islanti','Islanti'],
+  ['muu','Muu kieli – kirjoita itse…']
+];
+const demo = {
+  'vastuu':{simpleFinnish:'Vastuu tarkoittaa, että sinun pitää huolehtia omista tehtävistäsi ja teoistasi.',explanation:'Vastuu tarkoittaa, että huolehdit siitä, mitä teet.',translatedWord:'بەرپرسیارێتی',exampleFinnish:'Oppilaalla on vastuu omista tavaroistaan.',exampleTranslated:'',emoji:'🙌',imageSearch:'vastuu huolehtiminen',nuance:'Vastuu voi tarkoittaa myös velvollisuutta vastata jostakin asiasta.'},
+  'yhdenvertaisuus':{simpleFinnish:'Kaikki ihmiset ovat yhtä arvokkaita. Kaikkia pitää kohdella reilusti.',explanation:'Kaikki ihmiset ovat yhtä arvokkaita.',translatedWord:'یەکسانی',exampleFinnish:'Kaikilla oppilailla on oikeus yhdenvertaiseen kohteluun.',exampleTranslated:'',emoji:'🤝',imageSearch:'yhdenvertaisuus',nuance:''},
+  'demokratia':{simpleFinnish:'Ihmiset saavat vaikuttaa yhteisiin päätöksiin esimerkiksi äänestämällä.',explanation:'Ihmiset saavat vaikuttaa yhteisiin päätöksiin.',translatedWord:'دیموکراسی',exampleFinnish:'Demokratiassa kansalaiset äänestävät vaaleissa.',exampleTranslated:'',emoji:'🗳️',imageSearch:'demokratia äänestäminen',nuance:''},
+  'ilmastonmuutos':{simpleFinnish:'Maapallon ilmasto muuttuu ja lämpenee. Ihmisten toiminta on tärkein syy nykyiseen lämpenemiseen.',explanation:'Maapallon ilmasto lämpenee.',translatedWord:'گۆڕانی کەشوهەوا',exampleFinnish:'Ilmastonmuutos voi lisätä helteitä.',exampleTranslated:'',emoji:'🌍',imageSearch:'ilmastonmuutos maapallo',nuance:''},
+  'yhteiskunta':{simpleFinnish:'Ihmiset elävät yhdessä ja sopivat yhteisistä säännöistä ja palveluista.',explanation:'Yhdessä elävät ihmiset ja heidän yhteiset palvelunsa.',translatedWord:'کۆمەڵگا',exampleFinnish:'Koulut ja sairaalat ovat osa yhteiskuntaa.',exampleTranslated:'',emoji:'🏫',imageSearch:'yhteiskunta koulut',nuance:''},
+  'osallisuus':{simpleFinnish:'Saat olla mukana, kertoa mielipiteesi ja vaikuttaa asioihin.',explanation:'Saat osallistua ja vaikuttaa.',translatedWord:'بەشداربوون',exampleFinnish:'Oppilaiden osallisuus tarkoittaa, että heitä kuunnellaan.',exampleTranslated:'',emoji:'🙋',imageSearch:'osallisuus oppilaat',nuance:''},
+  'yhteistyö':{simpleFinnish:'Ihmiset tekevät jotakin yhdessä ja auttavat toisiaan.',explanation:'Teemme asioita yhdessä.',translatedWord:'هاوکاری',exampleFinnish:'Teimme ryhmätyön yhteistyössä.',exampleTranslated:'',emoji:'🧩',imageSearch:'yhteistyö koulu',nuance:''}
+};
+const demoOtherLanguages = {
+  'englanti': {word:'responsibility', explanation:'Responsibility means taking care of your duties and actions.'},
+  'ruotsi': {word:'ansvar', explanation:'Ansvar betyder att du tar hand om dina uppgifter och handlingar.'},
+  'arabia': {word:'مسؤولية', explanation:'المسؤولية تعني أن تهتم بواجباتك وأفعالك.'},
+  'viro': {word:'vastutus', explanation:'Vastutus tähendab, et hoolitsed oma ülesannete ja tegude eest.'},
+  'somali': {word:'mas’uuliyad', explanation:'Mas’uuliyad waa in aad daryeesho waajibaadkaaga iyo ficilladaada.'},
+  'kurdisorani': {word:'بەرپرسیارێتی', explanation:'بەرپرسیارێتی واتە ئەوەی ئاگاداری ئەرکەکانت و کردارەکانت بیت.'},
+  'suomi': {word:'vastuu', explanation:'Vastuu tarkoittaa, että huolehdit tehtävistäsi ja teoistasi.'}
+};
+function localDemo(word, explanationLanguage, translationLanguage) {
+  const k=word.toLocaleLowerCase('fi-FI').normalize('NFC');
+  if(!demo[k])return null;
+  if(explanationLanguage==='suomi'&&translationLanguage==='kurdisorani')return {word:k,explanationLanguage,translationLanguage,result:demo[k],demo:true};
+  if(k!=='vastuu'||!demoOtherLanguages[explanationLanguage]||!demoOtherLanguages[translationLanguage])return null;
+  return {word:k,explanationLanguage,translationLanguage,demo:true,result:{...demo[k],explanation:demoOtherLanguages[explanationLanguage].explanation,translatedWord:demoOtherLanguages[translationLanguage].word}};
+}
+let active=null, voiceObjectURL=null, audio=null, speechRequest=0;
+function optLabel(id){return LANGUAGES.find(([name])=>name===id)?.[1].replace(/\s[🇫🇮]+/gu,'') || id;}
+for (const id of ['explanationLanguage','translationLanguage']) {
+  const sel=$(id); for (const [v,label] of LANGUAGES) { const o=new Option(label,v);sel.add(o); }
+  sel.value=id==='explanationLanguage'?'suomi':'kurdisorani';
+  sel.addEventListener('change',()=>{ $(id==='explanationLanguage'?'explanationCustom':'translationCustom').classList.toggle('hidden',sel.value!=='muu'); });
+}
+function selected(which) {
+  const val=$(which+'Language').value;
+  return val==='muu' ? $(which+'Custom').value.trim() : val;
+}
+function label(which){const s=$(which+'Language');return s.value==='muu'?$(which+'Custom').value.trim():optLabel(s.value);}
+function speakRequestOptions(){return {'Content-Type':'application/json','x-class-code':$('classCode').value.trim()};}
+function alertText(message,error=false){$('status').textContent=message;$('status').classList.remove('hidden');$('status').classList.toggle('error',error);}
+function clearMessage(){$('status').classList.add('hidden');$('status').textContent='';}
+function rtl(lang){return /sorani|arabia|dari|persia|farsi|urdu|heprea|tigrinja|ckb|ar-|fa-/i.test(lang);}
+function putText(id,text,lang){const el=$(id);el.textContent=text||'';el.dir=rtl(lang)?'rtl':'ltr';el.lang=lang==='kurdisorani'?'ckb':(lang==='suomi'?'fi':'');}
+for(const word of ['vastuu','yhdenvertaisuus','demokratia','ilmastonmuutos','osallisuus']){
+  const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=word;b.addEventListener('click',()=>{$('word').value=word;handleExplain();});$('examples').append(b);
+}
+function stopAudio(){speechRequest++;if(audio){audio.pause();audio.src='';audio=null;}if(voiceObjectURL){URL.revokeObjectURL(voiceObjectURL);voiceObjectURL=null;}}
+function paint(data){stopAudio();const r=data.result;active=data;$('resultWord').textContent=data.word;$('modeBadge').textContent=data.demo?'Esimerkkitila':'Tekoälyn selitys';$('modeBadge').title=data.demo?'Rajattu esimerkkisanasto':'Tekoälyn tuottama, tarkista tarvittaessa';
+  putText('simpleFinnish',r.simpleFinnish,'suomi');putText('translatedWord',r.translatedWord,data.translationLanguage);putText('explanation',r.explanation,data.explanationLanguage);
+  putText('exampleFinnish',r.exampleFinnish,'suomi');putText('exampleTranslated',r.exampleTranslated,data.explanationLanguage);
+  $('exampleTranslated').classList.toggle('hidden',!r.exampleTranslated);
+  $('explanationPanel').classList.toggle('hidden',data.explanationLanguage==='suomi');
+  $('translatedHeading').textContent='Käännös: '+label('translation');$('explanationHeading').textContent='Selitys: '+label('explanation');
+  $('emoji').textContent=r.emoji||'📚';$('emoji').setAttribute('aria-label','Aiheen kuvitus: '+data.word);
+  $('nuance').textContent=r.nuance||'Sanan merkitys voi muuttua lauseyhteyden mukaan.';
+  $('imageSearch').href='https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(r.imageSearch||data.word)+'&title=Special:MediaSearch&type=image';
+  $('videoSearch').href='https://www.youtube.com/results?search_query='+encodeURIComponent(data.word+' selkokieli');
+  $('audioStatus').textContent='';$('result').classList.remove('hidden');$('result').scrollIntoView({behavior:'smooth',block:'start'});
+}
+async function handleExplain(){
+  const word=$('word').value.trim(),explanationLanguage=selected('explanation'),translationLanguage=selected('translation');
+  if(!word){alertText('Kirjoita ensin suomenkielinen sana.',true);return;}
+  if(!explanationLanguage||!translationLanguage){alertText('Kirjoita valitsemasi kielen nimi.',true);return;}
+  clearMessage();$('explainButton').disabled=true;$('explainButton').textContent='Selitän sanaa…';
+  try{
+    if(location.protocol==='file:')throw new Error('Paikallinen esimerkkiversio');
+    const response=await fetch('/api/explain',{method:'POST',headers:speakRequestOptions(),body:JSON.stringify({word,explanationLanguage,translationLanguage})});
+    const data=await response.json();if(!response.ok)throw new Error(data?.error||'Selittäminen epäonnistui.');
+    paint(data);
+  }catch(error){
+    const sample=localDemo(word,explanationLanguage,translationLanguage);
+    if(sample){
+      paint(sample);
+      alertText('Näytetään tallennettu esimerkki. Muiden sanojen tekoälyselitys vaatii julkaistun palvelun ja API-avaimen.');
+    } else { alertText((error.message||'Selittäminen epäonnistui.')+' Kokeile esimerkkisanoja suomi–sorani-asetuksilla tai sanaa ”vastuu” esimerkiksi ruotsiksi tai englanniksi.',true); }
+  }finally{$('explainButton').disabled=false;$('explainButton').textContent='✦ Selitä sana';}
+}
+async function say(text,language,button){
+  if(!text)return;
+  stopAudio();const requestID=speechRequest;
+  button.disabled=true;$('audioStatus').textContent='Luon ääntä…';
+  try{
+    if(location.protocol==='file:')throw new Error('Paikallisessa HTML-esikatselussa ei ole puhepalvelua. Julkaise sovellus Netlifyyn ja lisää API-avaimet.');
+    const response=await fetch('/api/speak',{method:'POST',headers:speakRequestOptions(),body:JSON.stringify({text,language})});
+    if(!response.ok){let msg='Puhepalvelu ei ole vielä käytössä.';try{msg=(await response.json()).error||msg;}catch{}throw new Error(msg);}
+    if(requestID!==speechRequest)return;
+    const blob=await response.blob();voiceObjectURL=URL.createObjectURL(blob);audio=new Audio(voiceObjectURL);
+    audio.onended=()=>{$('audioStatus').textContent='Kuuntelu valmis.';};
+    await audio.play();$('audioStatus').textContent='🔊 Ääni soi ('+language+').';
+  }catch(e){if(requestID===speechRequest)$('audioStatus').textContent=e.message||'Ääneenluku ei onnistunut.';}
+  finally{button.disabled=false;}
+}
+$('form').addEventListener('submit',e=>{e.preventDefault();handleExplain();});
+$('speakFi').addEventListener('click',()=>{if(active)say(active.result.simpleFinnish,'suomi',$('speakFi'));});
+$('speakTranslated').addEventListener('click',()=>{if(active)say(active.result.translatedWord,active.translationLanguage,$('speakTranslated'));});
+$('speakExplanation').addEventListener('click',()=>{if(active)say(active.result.explanation,active.explanationLanguage,$('speakExplanation'));});
+$('word').value='vastuu';
+if('serviceWorker' in navigator && location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
+</script>
+</body>
+</html>
